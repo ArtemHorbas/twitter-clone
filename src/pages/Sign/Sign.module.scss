@@ -1,0 +1,91 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.infoSide {
+  position: relative;
+  overflow: hidden;
+
+  background-color: #71C9F8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 50%;
+
+  .infoTwitterLogo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+  }
+
+  ul {
+    position: relative;
+
+    width: 380px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .infoIcons {
+      font-size: 32px;
+    }
+
+    h6 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+  }
+}
+
+.signSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 50%;
+
+  overflow: hidden;
+
+  .signWrapper {
+    max-width: 400px;
+  }
+
+  .signSideTitle {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 45px;
+    margin-top: 20px;
+  }
+
+  .twitterLogo {
+    font-size: 50px;
+  }
+
+}
+
+
+// const useStyles: any = makeStyles((theme: any) => ({
+// 	wrapper: {
+// 		display: 'flex',
+// 		height: '100%'
+// 	},
+// 	infoSide: {
+// 		backgroundColor: '#1DA1F2'
+// 	},
+// 	signSide: {}
+// }))
